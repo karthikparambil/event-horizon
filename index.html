@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Horizon</title>
+    <meta name="description"
+        content="Join the waitlist for Event Horizon, the next generation deep space exploration initiative.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="background-image"></div>
+        <div class="shader-canvas"
+            style="position: absolute; top: -5%; left: -5%; width: 110%; height: 110%; transform: scale(1.05); transition: transform 0.5s ease-out; will-change: transform; -webkit-mask-image: linear-gradient(to right, black 30%, transparent 80%); mask-image: linear-gradient(to right, black 30%, transparent 80%); mix-blend-mode: screen;">
+        </div>
+        <div class="background-overlay"></div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="nav-brand" style="display: flex; align-items: center; gap: 0.75rem;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
+                <!-- Distant Star -->
+                <path d="M 75 20 Q 80 20 80 15 Q 80 20 85 20 Q 80 20 80 25 Q 80 20 75 20" fill="var(--accent-color)"
+                    opacity="0.8" />
+                <!-- Main Accretion Ring -->
+                <ellipse cx="50" cy="50" rx="46" ry="14" fill="none" stroke="currentColor" stroke-width="4"
+                    transform="rotate(-25 50 50)" />
+                <!-- Secondary Dashed Orbit -->
+                <ellipse cx="50" cy="50" rx="36" ry="8" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-dasharray="6 6" transform="rotate(-25 50 50)" opacity="0.6" />
+                <!-- The Void (Singularity) -->
+                <circle cx="50" cy="50" r="20" fill="#05050A" stroke="currentColor" stroke-width="3" />
+                <!-- Glowing Core -->
+                <circle cx="50" cy="50" r="4" fill="var(--accent-color)" />
+            </svg>
+            EVENT HORIZON
+        </div>
+        <div class="nav-links">
+            <a href="#mission">Mission</a>
+            <a href="#technology">Tech</a>
+            <a href="#crew">Crew</a>
+        </div>
+    </nav>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1 class="display-title rubik-80s-fade-regular">
+                Event Horizon
+            </h1>
+            <p class="hero-description">
+                Step into a world of cyber battles, strategic challenges, and unforgettable adventures, where every
+                challenge conquered brings you closer to greatness.
+            </p>
+            <button class="nav-cta">
+                <span class="nav-cta-text">Register Now</span>
+                <div class="nav-cta-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="7" y1="17" x2="17" y2="7"></line>
+                        <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                </div>
+            </button>
+        </div>
+
+        <section class="countdown-section">
+            <div class="countdown-wrapper"
+                style="display: flex; flex-direction: column; align-items: center; gap: 1.5rem;">
+                <div class="countdown-container">
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="cd-days">00</span>
+                        <span class="countdown-label">DAYS</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="cd-hours">00</span>
+                        <span class="countdown-label">HOURS</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="cd-minutes">00</span>
+                        <span class="countdown-label">MINUTES</span>
+                    </div>
+                    <span class="countdown-separator">:</span>
+                    <div class="countdown-block">
+                        <span class="countdown-value" id="cd-seconds">00</span>
+                        <span class="countdown-label">SECONDS</span>
+                    </div>
+                </div>
+
+                <button class="calendar-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                        <line x1="10" y1="16" x2="14" y2="16"></line>
+                        <line x1="12" y1="14" x2="12" y2="18"></line>
+                    </svg>
+                    Add to Calendar
+                </button>
+            </div>
+        </section>
+    </main>
+
+
+    <section class="about-section" id="mission">
+        <div class="about-container">
+            <div class="about-grid">
+                <!-- Left Column -->
+                <div class="about-image-wrapper">
+                    <img src="Space-Theme-Inflatable-Planets.jpg" alt="Event Horizon Cyber Arena" class="about-image">
+                </div>
+
+                <!-- Right Column -->
+                <div class="about-content">
+                    <h2 class="section-title">About the Event</h2>
+                    <p class="about-description">
+                        Event Horizon is not just a competition; it is a proving ground for the galaxy's elite problem
+                        solvers and digital tacticians. Designed to push the boundaries of strategic thinking and
+                        cybersecurity expertise, this immersive experience challenges you to outsmart, outmaneuver, and
+                        outlast rival factions in a high-stakes digital frontier.
+                    </p>
+                    <p class="about-description">
+                        Whether you are a seasoned veteran of the cyber warfare scene or a rising star looking to make
+                        your mark, you'll find unprecedented opportunities to test your skills on state-of-the-art
+                        infrastructure. Forge alliances, uncover hidden vulnerabilities, and claim your place among the
+                        legends of the Event Horizon.
+                    </p>
+
+                    <ul class="about-highlights">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            Free Registration
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                <line x1="6" y1="1" x2="6" y2="4"></line>
+                                <line x1="10" y1="1" x2="10" y2="4"></line>
+                                <line x1="14" y1="1" x2="14" y2="4"></line>
+                            </svg>
+                            Food & Refreshments
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            Networking Opportunities
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5"></polyline>
+                                <line x1="12" y1="19" x2="20" y2="19"></line>
+                            </svg>
+                            Hands-on Activities
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="8" r="7"></circle>
+                                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                            </svg>
+                            Certificate of Participation
+                        </li>
+                    </ul>
+                </div>
+                <!-- Event Credential / Boarding Pass -->
+                <div class="credential-pass">
+                    <div class="credential-barcode">
+                        <div class="barcode-lines"></div>
+                        <span class="barcode-text">SYS.REQ.7734</span>
+                    </div>
+                    <div class="credential-details">
+                        <div class="cred-block">
+                            <span class="cred-label">DESTINATION</span>
+                            <span class="cred-value">Orbital Station Alpha</span>
+                        </div>
+                        <div class="cred-block">
+                            <span class="cred-label">T-ZERO</span>
+                            <span class="cred-value">Oct 12, 2026 • 09:00Z</span>
+                        </div>
+                        <div class="cred-block">
+                            <span class="cred-label">COMMAND</span>
+                            <span class="cred-value">5 Industry Leaders</span>
+                        </div>
+                    </div>
+                    <div class="credential-stub">
+                        <span class="stub-label">STATUS</span>
+                        <span class="stub-value">BOARDING</span>
+                        <div class="stub-capacity">
+                            <span class="cap-label">SLOTS</span>
+                            <span class="cap-value">150 / 500</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-phase-section" id="story-phase-03">
+        <div class="story-grid">
+            <div class="story-visual">
+                <img src="Space-Theme-Inflatable-Planets.jpg" alt="Phase 3 Event Day" class="story-image">
+                <div class="story-visual-overlay"></div>
+            </div>
+
+            <div class="story-content">
+                <div class="story-bg-number">03</div>
+
+                <div class="story-header">
+                    <span class="story-eyebrow">Phase: Event Day</span>
+                    <div class="story-title-wrapper">
+                        <h2 class="story-title">COMP<span class="title-accent">ETE</span></h2>
+                        <span class="story-duration">24 HOURS</span>
+                    </div>
+                </div>
+
+                <p class="story-description">
+                    Participate in cybersecurity challenges, physical missions, workshops, and team-based activities
+                    throughout the event.
+                </p>
+
+                <div class="story-metrics">
+                    <div class="metric-card">
+                        <svg class="metric-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <span class="metric-label">Challenges</span>
+                        <span class="metric-value">25+</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <svg class="metric-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                        <span class="metric-label">Teams</span>
+                        <span class="metric-value">50+</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <svg class="metric-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polyline points="12 6 12 12 16 14"></polyline>
+                        </svg>
+                        <span class="metric-label">Duration</span>
+                        <span class="metric-value">24 Hours</span>
+                    </div>
+
+                    <div class="metric-card">
+                        <svg class="metric-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="12" y1="1" x2="12" y2="23"></line>
+                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                        </svg>
+                        <span class="metric-label">Prize Pool</span>
+                        <span class="metric-value">₹50,000+</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Bar Section -->
+    <section class="info-bar-section">
+        <div class="info-bar-container">
+            <div class="info-item">
+                <div class="info-icon">
+                    <!-- Map Pin Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">Venue</span>
+                    <div style="display: flex; align-items: center; gap: 0.5rem;">
+                        <span class="info-value">Offenso Hackers Academy</span>
+                        <a href="https://maps.app.goo.gl/8nugk7RMhdyKkxES8" target="_blank" class="map-link"
+                            aria-label="Open in Maps">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <!-- Calendar Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">Date &amp; Time</span>
+                    <span class="info-value">Dec 12, 2026</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <!-- Users Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="9" cy="7" r="4"></circle>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                    </svg>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">Speakers</span>
+                    <span class="info-value">15+ Tech Leaders</span>
+                </div>
+            </div>
+            <div class="info-item">
+                <div class="info-icon">
+                    <!-- Ticket Icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                        <path d="M2 12a2 2 0 0 1 2-2v-2"></path>
+                        <path d="M2 12a2 2 0 0 0 2 2v2"></path>
+                        <path d="M22 12a2 2 0 0 0-2-2v-2"></path>
+                        <path d="M22 12a2 2 0 0 1-2 2v2"></path>
+                    </svg>
+                </div>
+                <div class="info-text">
+                    <span class="info-label">Seats</span>
+                    <span class="info-value">500 Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scroll Stack Section (Modules) -->
+    <section class="stack-section" id="technology">
+        <div style="text-align: center; padding-top: 10rem; position: relative; z-index: 10;">
+            <span class="story-eyebrow" style="margin-bottom: 1rem; display: block;">The Mission</span>
+            <h2 class="story-title" style="font-size: clamp(3rem, 6vw, 4.5rem);">WHY YOU SHOULD JOIN?</h2>
+        </div>
+        <div class="scroll-stack-scroller">
+            <div class="scroll-stack-inner">
+                <div class="scroll-stack-card-wrapper">
+                    <div class="scroll-stack-card">
+                        <div class="card-number">01</div>
+                        <span class="story-eyebrow" style="margin-bottom: 2rem;">Module 01</span>
+                        <h2 class="story-title" style="font-size: clamp(2rem, 5vw, 3.5rem);">CYBER WARFARE</h2>
+                        <p class="story-description" style="margin-top: 1rem; max-width: 600px;">
+                            Master offensive and defensive capabilities. Breach the outer perimeter of adversarial
+                            networks and establish a secure foothold.
+                        </p>
+                    </div>
+                </div>
+                <div class="scroll-stack-card-wrapper">
+                    <div class="scroll-stack-card">
+                        <div class="card-number">02</div>
+                        <span class="story-eyebrow" style="margin-bottom: 2rem;">Module 02</span>
+                        <h2 class="story-title" style="font-size: clamp(2rem, 5vw, 3.5rem);">ZERO-G HACKING</h2>
+                        <p class="story-description" style="margin-top: 1rem; max-width: 600px;">
+                            Operate in null gravity environments. Bypass quantum firewalls while managing life support
+                            systems under extreme pressure.
+                        </p>
+                    </div>
+                </div>
+                <div class="scroll-stack-card-wrapper">
+                    <div class="scroll-stack-card">
+                        <div class="card-number">03</div>
+                        <span class="story-eyebrow" style="margin-bottom: 2rem;">Module 03</span>
+                        <h2 class="story-title" style="font-size: clamp(2rem, 5vw, 3.5rem);">TACTICAL EVASION</h2>
+                        <p class="story-description" style="margin-top: 1rem; max-width: 600px;">
+                            Extract high-value data and evacuate the sector before autonomous defense protocols engage.
+                            Speed is survival.
+                        </p>
+                    </div>
+                </div>
+                <div class="scroll-stack-end"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Offenso Section -->
+    <section class="offenso-section" id="crew">
+        <div class="offenso-container">
+            <div class="offenso-grid">
+                <div class="offenso-info">
+                    <h2 class="offenso-title">ABOUT <span style="color: var(--accent-color)">OFFENSO ACADEMY</span></h2>
+                    <p class="offenso-description">Offenso Hackers Academy is the premier cybersecurity and ethical hacking training institute in Calicut. We are dedicated to forging the next generation of security professionals through rigorous, hands-on training environments and immersive, high-stakes events like Event Horizon.</p>
+                    <div class="offenso-stats">
+                        <div class="stat-item">
+                            <span class="stat-value">14</span>
+                            <span class="stat-label">Global Operations</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-value">20K+</span>
+                            <span class="stat-label">Agents Deployed</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offenso-map-container">
+                    <div class="live-mini-map">
+                        <iframe
+                            src="https://maps.google.com/maps?q=Offenso+Hackers+Academy+Calicut&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            class="google-map-iframe" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Info -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" fill="none" class="nav-logo-icon" style="margin-right: 0.5rem; color: var(--accent-color);">
+                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="10 5" opacity="0.3" />
+                            <ellipse cx="50" cy="50" rx="40" ry="12" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(25 50 50)" opacity="0.8" />
+                            <circle cx="50" cy="50" r="20" fill="#05050A" stroke="currentColor" stroke-width="3" />
+                            <circle cx="50" cy="50" r="4" fill="currentColor" />
+                        </svg>
+                        EVENT HORIZON
+                    </div>
+                    <p class="footer-tagline">Secure the perimeter. Command the lattice.</p>
+                </div>
+                <div class="footer-contact">
+                    <h4 class="footer-heading">SECURE COMMS</h4>
+                    <ul class="contact-list">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <a href="mailto:transmission@eventhorizon.net">transmission@eventhorizon.net</a>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>+1 (555) 019-8372</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-color)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Sector 7, Orbital Command</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4 class="footer-heading">NETWORK</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Event Horizon. All systems operational.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
