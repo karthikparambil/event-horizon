@@ -124,9 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const secondsEl = document.getElementById('cd-seconds');
 
   if (daysEl && hoursEl && minutesEl && secondsEl) {
-    // Set target date for the countdown (e.g., 30 days from now)
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 30);
+    // Set target date for the countdown to July 10, 3:00 PM IST
+    const targetDate = new Date('2026-07-10T15:00:00+05:30');
 
     let isFirstCall = true;
 
@@ -213,9 +212,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (stackCards.length && wrappers.length && typeof Lenis !== 'undefined') {
       const endElement = document.querySelector('.scroll-stack-end');
       
-      const itemDistance = window.innerHeight * 0.10; // Exactly 10vh gap so the next card sits right below the screen
-      const itemScale = 0.04;
-      const itemStackDistance = 50; // How much they overlap when stacked
+      const itemDistance = window.innerHeight * 0.10;
+      const itemScale = 0.15 / Math.max(1, stackCards.length - 1);
+      const itemStackDistance = (window.innerHeight * 0.10) / Math.max(1, stackCards.length - 1);
       const baseScale = 0.85;
       
       stackCards.forEach((card, i) => {
@@ -239,8 +238,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const updateCardTransforms = () => {
         const scrollTop = window.scrollY;
         const containerHeight = window.innerHeight;
-        const stackPositionPx = containerHeight * 0.10; // 10% to perfectly center 80vh card
-        const scaleEndPositionPx = containerHeight * 0.05; // 5%
+        const stackPositionPx = containerHeight * 0.05; // Moved up to 5% to leave room for stack
+        const scaleEndPositionPx = 0; // 0% so there is a smooth scroll distance for scaling
         
         const endElementTop = endElement ? getElementOffset(endElement) : 0;
 
