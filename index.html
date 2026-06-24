@@ -10,9 +10,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Bonheur+Royale&family=Rajdhani:wght@600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Bonheur+Royale&family=Rajdhani:wght@600;700&family=Teko:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="icon" type="image/png" href="assets/images/E-HZN%20LOGO-2%20png%20white.png">
 </head>
 
 <body>
@@ -26,26 +27,14 @@
 
     <nav class="glass-nav">
         <div class="nav-brand" style="display: flex; align-items: center; gap: 0.75rem;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 100 100" fill="none">
-                <!-- Distant Star -->
-                <path d="M 75 20 Q 80 20 80 15 Q 80 20 85 20 Q 80 20 80 25 Q 80 20 75 20" fill="var(--accent-color)"
-                    opacity="0.8" />
-                <!-- Main Accretion Ring -->
-                <ellipse cx="50" cy="50" rx="46" ry="14" fill="none" stroke="currentColor" stroke-width="4"
-                    transform="rotate(-25 50 50)" />
-                <!-- Secondary Dashed Orbit -->
-                <ellipse cx="50" cy="50" rx="36" ry="8" fill="none" stroke="currentColor" stroke-width="2"
-                    stroke-dasharray="6 6" transform="rotate(-25 50 50)" opacity="0.6" />
-                <!-- The Void (Singularity) -->
-                <circle cx="50" cy="50" r="20" fill="#05050A" stroke="currentColor" stroke-width="3" />
-                <!-- Glowing Core -->
-                <circle cx="50" cy="50" r="4" fill="var(--accent-color)" />
-            </svg>
-            EVENT HORIZON
+            <a href="#" style="display: block; cursor: pointer;">
+                <img src="assets/images/E-HZN%20LOGO-2%20png%20white.png" alt="Event Horizon Logo"
+                    style="height: 40px; width: auto; object-fit: contain;">
+            </a>
         </div>
         <div class="nav-links">
             <a href="#story-phase-03">About Event</a>
-            <a href="#technology">Modules</a>
+            <a href="#technology">Challenges</a>
             <a href="#schedule">Schedule</a>
             <a href="#crew">About Offenso</a>
         </div>
@@ -114,25 +103,44 @@
     </main>
 
     <!-- Organizer Logos Section -->
-    <div style="width: 100%; margin: 0 0 4rem 0; padding: 1.5rem 2rem; background: rgba(255, 255, 255, 0.015); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); position: relative; z-index: 10; backdrop-filter: blur(10px);">
-        <div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
-            
-            <div style="display: flex; align-items: center; gap: clamp(1.5rem, 3vw, 3rem); flex-wrap: wrap;">
-                <span style="font-family: 'Rajdhani', sans-serif; color: #ffffff; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; font-weight: 700;">Organized By</span>
-                
-                <div style="width: 1px; height: 24px; background: rgba(255, 255, 255, 0.2); display: inline-block;"></div>
-                
-                <div style="display: flex; justify-content: center; align-items: center; gap: clamp(2rem, 5vw, 4rem); opacity: 1;">
+    <div
+        style="width: 100%; margin: 0 0 4rem 0; padding: 1.5rem 2rem; background: rgba(255, 255, 255, 0.015); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); position: relative; z-index: 10; backdrop-filter: blur(10px);">
+        <div
+            style="max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; gap: 2rem; width: 100%;">
+
+            <div style="display: flex; align-items: center; gap: clamp(1rem, 2vw, 2rem); flex-wrap: nowrap; flex: 1;">
+                <span
+                    style="font-family: 'Rajdhani', sans-serif; color: #ffffff; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; font-weight: 700; margin-left: clamp(4rem, 12vw, 18rem);">Organized
+                    By</span>
+
+                <div style="width: 1px; height: 24px; background: rgba(255, 255, 255, 0.2); display: inline-block;">
+                </div>
+
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; opacity: 1; flex-wrap: nowrap; flex: 1; padding-right: 2rem;">
                     <!-- Company Logo -->
-                    <img src="https://via.placeholder.com/180x40/111/fff?text=COMPANY+LOGO" alt="Company Logo" style="height: 35px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;" onmouseover="this.style.filter='grayscale(0) brightness(100%)'" onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
-                    
+                    <img src="assets/images/Offenso-Logo-White.png" alt="Company Logo"
+                        style="height: clamp(28px, 3vw, 40px); width: auto; max-width: 150px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;"
+                        onmouseover="this.style.filter='grayscale(0) brightness(100%)'"
+                        onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
+
+                    <!-- Team Logo -->
+                    <img src="assets/images/R&amp;D-logo-team.png" alt="R&amp;D Team Logo"
+                        style="height: clamp(28px, 3vw, 40px); width: auto; max-width: 150px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;"
+                        onmouseover="this.style.filter='grayscale(0) brightness(100%)'"
+                        onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
+
                     <!-- Community Logo -->
-                    <img src="https://via.placeholder.com/180x40/111/fff?text=COMMUNITY+LOGO" alt="Community Logo" style="height: 35px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;" onmouseover="this.style.filter='grayscale(0) brightness(100%)'" onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
+                    <img src="assets/images/arc.png" alt="Community Logo"
+                        style="height: clamp(28px, 3vw, 40px); width: auto; max-width: 150px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;"
+                        onmouseover="this.style.filter='grayscale(0) brightness(100%)'"
+                        onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
                 </div>
             </div>
 
             <!-- Hashtag -->
-            <span style="font-family: 'Rajdhani', sans-serif; font-size: clamp(1.5rem, 3vw, 2.5rem); font-weight: 800; letter-spacing: 2px; background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.2) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; filter: drop-shadow(0 4px 15px rgba(14, 165, 233, 0.2)); line-height: 1; text-transform: uppercase;">#DECODEKOZHIKODE</span>
+            <span class="glass-text" data-text="#DECODEKOZHIKODE"
+                style="font-size: clamp(1.5rem, 3vw, 3.5rem); margin-left: auto; text-align: right;">#DECODEKOZHIKODE</span>
         </div>
     </div>
 
@@ -336,7 +344,7 @@
                             <div class="hud-number">01</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -424,7 +432,7 @@
                             <div class="hud-number">02</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -510,7 +518,7 @@
                             <div class="hud-number">03</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -599,7 +607,7 @@
                             <div class="hud-number">04</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -687,7 +695,7 @@
                             <div class="hud-number">05</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -775,7 +783,7 @@
                             <div class="hud-number">06</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -864,7 +872,7 @@
                             <div class="hud-number">07</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -952,7 +960,7 @@
                             <div class="hud-number">08</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -1039,7 +1047,7 @@
                             <div class="hud-number">09</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -1127,7 +1135,7 @@
                             <div class="hud-number">10</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -1216,7 +1224,7 @@
                             <div class="hud-number">11</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -1306,7 +1314,7 @@
                             <div class="hud-number">12</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -1394,7 +1402,7 @@
                             <div class="hud-number">13</div>
                             <div class="hud-separator"></div>
                             <div class="hud-label-container">
-                                <div class="hud-label">EVENT MODULE</div>
+                                <div class="hud-label">EVENT CHALLENGE</div>
                                 <div class="hud-deco"></div>
                             </div>
                         </div>
@@ -1635,8 +1643,18 @@
         <div class="offenso-container">
             <div class="offenso-grid">
                 <div class="offenso-info">
-                    <h2 class="offenso-title">ABOUT <span class="title-accent">OFFENSO</span></h2>
-                    <p class="offenso-description">Offenso Hackers Academy is the premier cybersecurity and ethical
+                    <h2 class="offenso-title" style="white-space: nowrap; font-size: clamp(2rem, 3.5vw, 4.5rem);">ABOUT
+                        <span class="title-accent">OFFENSO</span></h2>
+
+                    <div
+                        style="margin: 2.5rem 0 3rem 0; padding-left: 1rem; border-left: 2px solid rgba(255,255,255,0.1);">
+                        <img src="assets/images/Offenso-Logo-White.png" alt="Offenso Academy"
+                            style="width: 100%; max-width: 360px; display: block; filter: drop-shadow(0 0 20px rgba(255,255,255,0.1));">
+                    </div>
+
+                    <p class="offenso-description"
+                        style="font-size: 1.15rem; line-height: 1.9; color: rgba(255,255,255,0.85); max-width: 95%;">
+                        Offenso Hackers Academy is the premier cybersecurity and ethical
                         hacking training institute in Calicut. We are dedicated to forging the next generation of
                         security professionals through rigorous, hands-on training environments and immersive,
                         high-stakes events like Event Horizon.</p>
@@ -1660,16 +1678,8 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 100 100" fill="none"
-                            class="nav-logo-icon" style="margin-right: 0.5rem; color: var(--accent-color);">
-                            <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-dasharray="10 5" opacity="0.3" />
-                            <ellipse cx="50" cy="50" rx="40" ry="12" fill="none" stroke="currentColor" stroke-width="2"
-                                transform="rotate(25 50 50)" opacity="0.8" />
-                            <circle cx="50" cy="50" r="20" fill="#05050A" stroke="currentColor" stroke-width="3" />
-                            <circle cx="50" cy="50" r="4" fill="currentColor" />
-                        </svg>
-                        EVENT HORIZON
+                        <img src="assets/images/E-HZN%20LOGO-2%20png%20white.png" alt="Event Horizon Logo"
+                            style="height: 32px; width: auto; object-fit: contain;">
                     </div>
                     <p class="footer-tagline">Secure the perimeter. Command the lattice.</p>
                 </div>
