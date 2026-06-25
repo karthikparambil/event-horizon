@@ -105,6 +105,7 @@
         </section>
     </main>
 
+
     <!-- Organizer Logos Section -->
     <div class="organizer-banner">
         <div class="organizer-banner-inner">
@@ -142,7 +143,7 @@
                     <div class="story-title-wrapper">
                         <h2 class="story-title" style="white-space: nowrap;">ABOUT <span
                                 class="title-accent">EVENT</span></h2>
-                        <span class="story-duration">24 HOURS</span>
+                        <span class="story-duration">15 HOURS</span>
                     </div>
                 </div>
 
@@ -218,7 +219,7 @@
                             <polyline points="12 6 12 12 16 14"></polyline>
                         </svg>
                         <span class="metric-label">Duration</span>
-                        <span class="metric-value">24 Hours</span>
+                        <span class="metric-value">15 Hours</span>
                     </div>
 
 
@@ -227,86 +228,89 @@
         </div>
     </section>
 
-    <!-- Info Bar Section -->
-    <section class="info-bar-section">
-        <div class="info-bar-container">
-            <div class="info-item">
-                <div class="info-icon">
-                    <!-- Map Pin Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                        <circle cx="12" cy="10" r="3"></circle>
-                    </svg>
+    <!-- Info Bar Wrapper -->
+    <div class="info-bar-wrapper">
+        <!-- Info Bar Section -->
+        <section class="info-bar-section">
+            <div class="info-bar-container">
+                <div class="info-item">
+                    <div class="info-icon">
+                        <!-- Map Pin Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <span class="info-label">Venue</span>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <span class="info-value">Offenso Hackers Academy</span>
+                            <a href="https://maps.app.goo.gl/8nugk7RMhdyKkxES8" target="_blank" class="map-link"
+                                aria-label="Open in Maps">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-text">
-                    <span class="info-label">Venue</span>
-                    <div style="display: flex; align-items: center; gap: 0.5rem;">
-                        <span class="info-value">Offenso Hackers Academy</span>
-                        <a href="https://maps.app.goo.gl/8nugk7RMhdyKkxES8" target="_blank" class="map-link"
-                            aria-label="Open in Maps">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                <polyline points="15 3 21 3 21 9"></polyline>
-                                <line x1="10" y1="14" x2="21" y2="3"></line>
-                            </svg>
-                        </a>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <!-- Calendar Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <span class="info-label">Date &amp; Time</span>
+                        <span class="info-value">July 10, 2026</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <!-- Users Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <span class="info-label">Speakers</span>
+                        <span class="info-value">15+ Tech Leaders</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">
+                        <!-- Ticket Icon -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                            <path d="M2 12a2 2 0 0 1 2-2v-2"></path>
+                            <path d="M2 12a2 2 0 0 0 2 2v2"></path>
+                            <path d="M22 12a2 2 0 0 0-2-2v-2"></path>
+                            <path d="M22 12a2 2 0 0 1-2 2v2"></path>
+                        </svg>
+                    </div>
+                    <div class="info-text">
+                        <span class="info-label">Seats</span>
+                        <span class="info-value">500 Available</span>
                     </div>
                 </div>
             </div>
-            <div class="info-item">
-                <div class="info-icon">
-                    <!-- Calendar Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                        <line x1="16" y1="2" x2="16" y2="6"></line>
-                        <line x1="8" y1="2" x2="8" y2="6"></line>
-                        <line x1="3" y1="10" x2="21" y2="10"></line>
-                    </svg>
-                </div>
-                <div class="info-text">
-                    <span class="info-label">Date &amp; Time</span>
-                    <span class="info-value">July 10, 2026</span>
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="info-icon">
-                    <!-- Users Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="9" cy="7" r="4"></circle>
-                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-                        <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-                    </svg>
-                </div>
-                <div class="info-text">
-                    <span class="info-label">Speakers</span>
-                    <span class="info-value">15+ Tech Leaders</span>
-                </div>
-            </div>
-            <div class="info-item">
-                <div class="info-icon">
-                    <!-- Ticket Icon -->
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="6" width="20" height="12" rx="2"></rect>
-                        <path d="M2 12a2 2 0 0 1 2-2v-2"></path>
-                        <path d="M2 12a2 2 0 0 0 2 2v2"></path>
-                        <path d="M22 12a2 2 0 0 0-2-2v-2"></path>
-                        <path d="M22 12a2 2 0 0 1-2 2v2"></path>
-                    </svg>
-                </div>
-                <div class="info-text">
-                    <span class="info-label">Seats</span>
-                    <span class="info-value">500 Available</span>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <!-- Scroll Stack Section (Modules) -->
     <section class="stack-section" id="technology">
@@ -645,10 +649,10 @@
                                 <div class="sdetail-sep">:</div>
                                 <div class="sdetail-val">
                                     <div class="avatar-group" style="margin-left: 0;">
-                                        <a href="#" target="_blank" class="avatar"
+                                        <a href="https://github.com/Yoonas18" target="_blank" class="avatar"
                                             style="background-color: #ec4899; border-color: #8c8273;"
                                             title="Yoonus K Y">
-                                            <div class="avatar-initial">Y</div>
+                                            <img src="https://github.com/Yoonas18.png" alt="Yoonus K Y">
                                         </a>
                                         <a href="https://github.com/ajex13george" target="_blank" class="avatar"
                                             style="background-color: #3b82f6; border-color: #8c8273;"
@@ -733,10 +737,10 @@
                                 <div class="sdetail-sep">:</div>
                                 <div class="sdetail-val">
                                     <div class="avatar-group" style="margin-left: 0;">
-                                        <a href="#" target="_blank" class="avatar"
+                                        <a href="https://github.com/Yoonas18" target="_blank" class="avatar"
                                             style="background-color: #3b82f6; border-color: #8c8273;"
                                             title="Yoonus K Y">
-                                            <div class="avatar-initial">Y</div>
+                                            <img src="https://github.com/Yoonas18.png" alt="Yoonus K Y">
                                         </a>
                                         <a href="https://github.com/ajex13george" target="_blank" class="avatar"
                                             style="background-color: #14b8a6; border-color: #8c8273;"
