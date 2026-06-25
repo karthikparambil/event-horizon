@@ -302,8 +302,8 @@ document.addEventListener('DOMContentLoaded', () => {
             // We use JS purely to scale it down and push it up as subsequent cards scroll over it.
             
             // Determine distance to next card to calculate relative progression
-            // Default to 40vh scroll distance if it's the last card
-            const nextWrapperTop = i < wrappers.length - 1 ? wrapperTops[i + 1] : wrapperTops[i] + viewportHeight * 0.4;
+            // Default to 20vh scroll distance if it's the last card
+            const nextWrapperTop = i < wrappers.length - 1 ? wrapperTops[i + 1] : wrapperTops[i] + viewportHeight * 0.2;
             const distanceToNextCard = nextWrapperTop - absoluteTop;
             
             // progress: 0 when just pinned, 1 when next card reaches its sticky point
@@ -324,9 +324,22 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.transform = `translate3d(0, ${translateY}px, 0) scale(${finalScale})`;
             card.style.opacity = finalOpacity;
           } else {
-            // Card hasn't reached sticky point yet (normal flow coming up from bottom)
-            card.style.transform = `translate3d(0, 0, 0) scale(1)`;
-            card.style.opacity = 1;
+            // Card hasn't reached sticky point yet (coming up from the bottom).
+            // Calculate how far it is from the sticky point
+            const distanceBeforeSticky = Math.abs(distancePastSticky);
+            const maxDistance = viewportHeight - stickyTop;
+            
+            // progressBefore: 1 when at bottom of screen, 0 when at sticky point
+            const progressBefore = Math.min(1, Math.max(0, distanceBeforeSticky / maxDistance));
+            
+            // Zoom in from 0.85 to 1.0
+            const scaleIn = 1 - (progressBefore * 0.15);
+            
+            // Fade in from 0.3 to 1.0
+            const opacityIn = 1 - (progressBefore * 0.7);
+
+            card.style.transform = `translate3d(0, 0, 0) scale(${scaleIn})`;
+            card.style.opacity = opacityIn;
           }
         });
       };

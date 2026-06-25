@@ -1145,7 +1145,7 @@ body {
 .scroll-stack-card-wrapper {
     position: sticky;
     top: 5vh;
-    margin-bottom: 40vh; /* Scroll distance until next card arrives */
+    margin-bottom: 20vh; /* Scroll distance until next card arrives */
     width: 100%;
     will-change: transform, opacity;
 }
@@ -1158,8 +1158,8 @@ body {
     background: linear-gradient(145deg, #1c1f2b 0%, #0c0f16 100%);
     border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 28px;
-    height: 80vh;
-    min-height: 600px;
+    height: auto;
+    min-height: 65vh;
     width: 100%;
     box-sizing: border-box;
     transform-origin: top center;
@@ -1603,7 +1603,7 @@ body {
 
     .scroll-stack-card-wrapper {
         top: 2vh;
-        margin-bottom: 25vh; /* Tighter scroll distance for mobile */
+        margin-bottom: 10vh; /* Tighter scroll distance for mobile */
     }
 
     /* Force image to top row */
@@ -1629,11 +1629,6 @@ body {
     .svisual-overlay {
         background: linear-gradient(180deg, transparent 30%, rgba(20, 23, 32, 0.85) 100%),
                     linear-gradient(90deg, rgba(20, 23, 32, 0.4) 0%, transparent 40%);
-    }
-
-    /* Clear JS-injected marginBottom */
-    .scroll-stack-card-wrapper {
-        margin-bottom: 1.25rem !important;
     }
 
     .scroll-stack-inner {
