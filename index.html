@@ -13,7 +13,7 @@
         href="https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&family=Bonheur+Royale&family=Rajdhani:wght@600;700&family=Teko:wght@700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" type="image/png" href="assets/images/E-HZN%20LOGO-2%20png%20white.png">
+    <link rel="icon" type="image/png" href="assets/images/E-HZN%20LOGO-2%20png%20white.webp">
 </head>
 
 <body>
@@ -28,16 +28,19 @@
     <nav class="glass-nav">
         <div class="nav-brand" style="display: flex; align-items: center; gap: 0.75rem;">
             <a href="#" style="display: block; cursor: pointer;">
-                <img src="assets/images/E-HZN%20LOGO-2%20png%20white.png" alt="Event Horizon Logo"
+                <img src="assets/images/E-HZN%20LOGO-2%20png%20white.webp" alt="Event Horizon Logo"
                     style="height: 40px; width: auto; object-fit: contain;">
             </a>
         </div>
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
             <a href="#story-phase-03">About Event</a>
             <a href="#technology">Challenges</a>
             <a href="#schedule">Schedule</a>
             <a href="#crew">About Offenso</a>
         </div>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
 
     <main class="hero">
@@ -103,51 +106,32 @@
     </main>
 
     <!-- Organizer Logos Section -->
-    <div
-        style="width: 100%; margin: 0 0 4rem 0; padding: 1.5rem 2rem; background: rgba(255, 255, 255, 0.015); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05); position: relative; z-index: 10; backdrop-filter: blur(10px);">
-        <div
-            style="max-width: 1600px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: nowrap; gap: 2rem; width: 100%;">
+    <div class="organizer-banner">
+        <div class="organizer-banner-inner">
 
-            <div style="display: flex; align-items: center; gap: clamp(1rem, 2vw, 2rem); flex-wrap: nowrap; flex: 1;">
-                <span
-                    style="font-family: 'Rajdhani', sans-serif; color: #ffffff; text-transform: uppercase; letter-spacing: 2px; font-size: 1rem; font-weight: 700; margin-left: clamp(4rem, 12vw, 18rem);">Organized
-                    By</span>
-
-                <div style="width: 1px; height: 24px; background: rgba(255, 255, 255, 0.2); display: inline-block;">
-                </div>
-
-                <div
-                    style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; opacity: 1; flex-wrap: nowrap; flex: 1; padding-right: 2rem;">
-                    <!-- Company Logo -->
-                    <img src="assets/images/Offenso-Logo-White.png" alt="Company Logo"
-                        style="height: clamp(28px, 3vw, 40px); width: auto; max-width: 150px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;"
-                        onmouseover="this.style.filter='grayscale(0) brightness(100%)'"
-                        onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
-
-                    <!-- Team Logo -->
-                    <img src="assets/images/R&amp;D-logo-team.png" alt="R&amp;D Team Logo"
-                        style="height: clamp(28px, 3vw, 40px); width: auto; max-width: 150px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;"
-                        onmouseover="this.style.filter='grayscale(0) brightness(100%)'"
-                        onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
-
-                    <!-- Community Logo -->
-                    <img src="assets/images/arc.png" alt="Community Logo"
-                        style="height: clamp(28px, 3vw, 40px); width: auto; max-width: 150px; filter: grayscale(100%) brightness(200%); object-fit: contain; transition: filter 0.3s ease; cursor: pointer;"
-                        onmouseover="this.style.filter='grayscale(0) brightness(100%)'"
-                        onmouseout="this.style.filter='grayscale(100%) brightness(200%)'">
+            <div class="organizer-banner-left">
+                <span class="organizer-label">Organized By</span>
+                <div class="organizer-divider"></div>
+                <div class="organizer-logos">
+                    <img src="assets/images/Offenso-Logo-White.webp" alt="Offenso Hackers Academy"
+                        class="organizer-logo">
+                    <img src="assets/images/R&amp;D-logo-team.webp" alt="R&amp;D Team" class="organizer-logo">
+                    <img src="assets/images/arc.webp" alt="Arc Community" class="organizer-logo">
                 </div>
             </div>
 
-            <!-- Hashtag -->
-            <span class="glass-text" data-text="#DECODEKOZHIKODE"
-                style="font-size: clamp(1.5rem, 3vw, 3.5rem); margin-left: auto; text-align: right;">#DECODEKOZHIKODE</span>
+            <div class="organizer-banner-right">
+                <span class="glass-text organizer-hashtag" data-text="#DECODEKOZHIKODE">#DECODEKOZHIKODE</span>
+            </div>
+
         </div>
     </div>
+
 
     <section class="story-phase-section" id="story-phase-03">
         <div class="story-grid">
             <div class="story-visual">
-                <img src="assets/images/Space-Theme-Inflatable-Planets.jpg" alt="Phase 3 Event Day" class="story-image">
+                <img src="assets/images/Space-Theme-Inflatable-Planets.webp" alt="Phase 3 Event Day" class="story-image" loading="lazy">
                 <div class="story-visual-overlay"></div>
             </div>
 
@@ -414,7 +398,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/bug-bounty.png" alt="Bug Bounty" class="svisual-img">
+                            <img src="assets/images/bug-bounty.webp" alt="Bug Bounty" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -500,7 +484,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/prompt-injection.png" alt="Prompt Injection" class="svisual-img">
+                            <img src="assets/images/prompt-injection.webp" alt="Prompt Injection" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -544,7 +528,7 @@
                                     </svg></div>
                                 <div class="sdetail-label">Duration</div>
                                 <div class="sdetail-sep">:</div>
-                                <div class="sdetail-val text-white">2 Hours</div>
+                                <div class="sdetail-val text-white">4 Hours</div>
                             </div>
                             <div class="sdetail-divider"></div>
                             <div class="sdetail-row">
@@ -589,7 +573,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/machine.png" alt="Machine Exploitation" class="svisual-img">
+                            <img src="assets/images/machine.webp" alt="Machine Exploitation" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -677,7 +661,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/incident-responce.png" alt="Incident Response" class="svisual-img">
+                            <img src="assets/images/incident-responce.webp" alt="Incident Response" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -765,7 +749,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/presentation.png" alt="Presentation" class="svisual-img">
+                            <img src="assets/images/presentation.webp" alt="Presentation" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -854,7 +838,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/doxxing.png" alt="Doxxing" class="svisual-img">
+                            <img src="assets/images/doxxing.webp" alt="Doxxing" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -942,7 +926,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/hardware.png" alt="Hardware" class="svisual-img">
+                            <img src="assets/images/hardware.webp" alt="Hardware" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -1029,7 +1013,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/morse-code.png" alt="Morse Decoding" class="svisual-img">
+                            <img src="assets/images/morse-code.webp" alt="Morse Decoding" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -1117,7 +1101,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/password.png" alt="Password Game" class="svisual-img">
+                            <img src="assets/images/password.webp" alt="Password Game" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -1206,7 +1190,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/quiz.png" alt="Quiz" class="svisual-img">
+                            <img src="assets/images/quiz.webp" alt="Quiz" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -1296,7 +1280,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/ransomware.png" alt="Ransomware Recovery" class="svisual-img">
+                            <img src="assets/images/ransomware.webp" alt="Ransomware Recovery" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -1384,7 +1368,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/web-banking.png" alt="Bank Hacking" class="svisual-img">
+                            <img src="assets/images/web-banking.webp" alt="Bank Hacking" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -1468,7 +1452,7 @@
                         </div>
                         <div class="showcase-visual">
                             <div class="svisual-glow"></div>
-                            <img src="assets/images/ctf.png" alt="CTF" class="svisual-img">
+                            <img src="assets/images/ctf.webp" alt="CTF" class="svisual-img">
                             <div class="svisual-overlay"></div>
                             <div class="svisual-frame"></div>
                         </div>
@@ -1644,11 +1628,12 @@
             <div class="offenso-grid">
                 <div class="offenso-info">
                     <h2 class="offenso-title" style="white-space: nowrap; font-size: clamp(2rem, 3.5vw, 4.5rem);">ABOUT
-                        <span class="title-accent">OFFENSO</span></h2>
+                        <span class="title-accent">OFFENSO</span>
+                    </h2>
 
                     <div
                         style="margin: 2.5rem 0 3rem 0; padding-left: 1rem; border-left: 2px solid rgba(255,255,255,0.1);">
-                        <img src="assets/images/Offenso-Logo-White.png" alt="Offenso Academy"
+                        <img src="assets/images/Offenso-Logo-White.webp" alt="Offenso Academy"
                             style="width: 100%; max-width: 360px; display: block; filter: drop-shadow(0 0 20px rgba(255,255,255,0.1));">
                     </div>
 
@@ -1678,7 +1663,7 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="footer-logo">
-                        <img src="assets/images/E-HZN%20LOGO-2%20png%20white.png" alt="Event Horizon Logo"
+                        <img src="assets/images/E-HZN%20LOGO-2%20png%20white.webp" alt="Event Horizon Logo"
                             style="height: 32px; width: auto; object-fit: contain;">
                     </div>
                     <p class="footer-tagline">Secure the perimeter. Command the lattice.</p>
