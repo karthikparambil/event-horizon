@@ -137,7 +137,7 @@ body {
     gap: 2rem;
 }
 
-/* Hamburger button — hidden on desktop */
+/* Hamburger button - hidden on desktop */
 .nav-hamburger {
     display: none;
     flex-direction: column;
@@ -447,7 +447,7 @@ body {
     z-index: 10;
 }
 
-/* On mobile the countdown is NOT absolutely positioned — it flows below the hero content */
+/* On mobile the countdown is NOT absolutely positioned - it flows below the hero content */
 @media (max-width: 768px) {
     .hero {
         justify-content: flex-start;
@@ -1829,7 +1829,7 @@ body {
     margin: 3px 0;
 }
 
-/* Banner panel — glassmorphism */
+/* Banner panel - glassmorphism */
 .sch-banner {
     flex: 1;
     display: flex;
@@ -1877,7 +1877,7 @@ body {
     pointer-events: none;
 }
 
-/* Subtle inner glass depth — bottom reflection */
+/* Subtle inner glass depth - bottom reflection */
 .sch-banner::after {
     content: '';
     position: absolute;
@@ -1899,7 +1899,7 @@ body {
     z-index: 1;
 }
 
-/* Diagonal hatch marks — right end of banner */
+/* Diagonal hatch marks - right end of banner */
 .sch-hatch {
     width: 80px;
     flex-shrink: 0;
@@ -1944,7 +1944,7 @@ body {
     margin: 0;
 }
 
-/* Hex badge — glassy upgrade */
+/* Hex badge - glassy upgrade */
 .sch-hex {
     width: 100px;
     height: 86px;
@@ -3014,7 +3014,7 @@ body {
     }
 }
 
-/* Contain scroll stack cards to reduce paint area — desktop only */
+/* Contain scroll stack cards to reduce paint area - desktop only */
 @media (min-width: 901px) {
     .scroll-stack-card {
         contain: layout style;
@@ -4486,19 +4486,55 @@ body {
 
             <div class="schedule-timeline">
 
+                <!-- Initiation -->
                 <div class="sch-row">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">08:30</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">03 PM</span></div>
                         </div>
                         <div class="sch-vline"></div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
+                            <span class="sch-tag">Initiation</span>
+                            <h3 class="sch-title">Opening Session &amp; Briefing</h3>
+                            <p class="sch-desc">3:00 PM &mdash; Welcome address, mission parameters revealed, and team orientation.</p>
+                        </div>
+                        <div class="sch-hatch"></div>
+                    </div>
+                </div>
 
-                            <h3 class="sch-title">Participant Check-In</h3>
-                            <p class="sch-desc">Registration desks open. Collect your access credentials and team kits.
-                            </p>
+                <!-- Event 01 -->
+                <div class="sch-row">
+                    <div class="sch-left">
+                        <div class="sch-hex">
+                            <div class="sch-hex-face"><span class="sch-time">04 PM</span></div>
+                        </div>
+                        <div class="sch-vline"></div>
+                    </div>
+                    <div class="sch-banner">
+                        <div class="sch-content">
+                            <span class="sch-tag">Event 01</span>
+                            <h3 class="sch-title">GN-11 Enigma</h3>
+                            <p class="sch-desc">Password Security Game &mdash; 4:00 PM &ndash; 5:00 PM</p>
+                        </div>
+                        <div class="sch-hatch"></div>
+                    </div>
+                </div>
+
+                <!-- Events 02, 08, 09, 10, 11, 12 all start at 5 PM -->
+                <div class="sch-row">
+                    <div class="sch-left">
+                        <div class="sch-hex">
+                            <div class="sch-hex-face"><span class="sch-time">05 PM</span></div>
+                        </div>
+                        <div class="sch-vline"></div>
+                    </div>
+                    <div class="sch-banner">
+                        <div class="sch-content">
+                            <span class="sch-tag">Event 02</span>
+                            <h3 class="sch-title">Stellar Axiom</h3>
+                            <p class="sch-desc">Quiz &mdash; 5:00 PM &ndash; 6:00 PM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
@@ -4507,16 +4543,15 @@ body {
                 <div class="sch-row">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">09:00</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">05 PM</span></div>
                         </div>
                         <div class="sch-vline"></div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
-
-                            <h3 class="sch-title">Opening Ceremony</h3>
-                            <p class="sch-desc">Welcome address, safety briefing, and mission parameters revealed to all
-                                operators.</p>
+                            <span class="sch-tag">Event 08</span>
+                            <h3 class="sch-title">The Bug Bang</h3>
+                            <p class="sch-desc">Bug Bounty Platform &mdash; 5:00 PM &ndash; 2:00 AM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
@@ -4525,16 +4560,15 @@ body {
                 <div class="sch-row">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">10:00</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">05 PM</span></div>
                         </div>
                         <div class="sch-vline"></div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
-
-                            <h3 class="sch-title">CTF Challenges Begin</h3>
-                            <p class="sch-desc">All cyber warfare modules go live simultaneously. Clock starts. No
-                                extensions.</p>
+                            <span class="sch-tag">Event 09</span>
+                            <h3 class="sch-title">Silent Circuits</h3>
+                            <p class="sch-desc">Hardware Morse Decoding &mdash; 5:00 PM &ndash; 2:00 AM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
@@ -4543,16 +4577,15 @@ body {
                 <div class="sch-row">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">13:00</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">05 PM</span></div>
                         </div>
                         <div class="sch-vline"></div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
-
-                            <h3 class="sch-title">Lunch &amp; Debrief</h3>
-                            <p class="sch-desc">Secure refreshment window. Intel exchange between allied teams
-                                permitted.</p>
+                            <span class="sch-tag">Event 10</span>
+                            <h3 class="sch-title">Dots of Destiny</h3>
+                            <p class="sch-desc">Ransomware Recovery &mdash; 5:00 PM &ndash; 2:00 AM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
@@ -4561,16 +4594,15 @@ body {
                 <div class="sch-row">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">14:00</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">05 PM</span></div>
                         </div>
                         <div class="sch-vline"></div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
-
-                            <h3 class="sch-title">Expert Sessions</h3>
-                            <p class="sch-desc">Live demonstrations from 5 industry leaders. Topics announced on-site.
-                            </p>
+                            <span class="sch-tag">Event 11</span>
+                            <h3 class="sch-title">Ares-1: Mission Recovery</h3>
+                            <p class="sch-desc">Bank Hacking &mdash; 5:00 PM &ndash; 2:00 AM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
@@ -4579,50 +4611,122 @@ body {
                 <div class="sch-row">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">16:00</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">05 PM</span></div>
                         </div>
                         <div class="sch-vline"></div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
-
-                            <h3 class="sch-title">Physical Challenges</h3>
-                            <p class="sch-desc">Team-based lock-picking, hardware hacking, and field recon missions.</p>
+                            <span class="sch-tag">Event 12</span>
+                            <h3 class="sch-title">Bankrupt</h3>
+                            <p class="sch-desc">Capture The Flag Competition &mdash; 5:00 PM &ndash; 2:00 AM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
                 </div>
 
+                <!-- Event 03 -->
                 <div class="sch-row">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">18:30</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">06 PM</span></div>
                         </div>
                         <div class="sch-vline"></div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
-
-                            <h3 class="sch-title">Final Flag Submission</h3>
-                            <p class="sch-desc">All challenge portals lock. Final score snapshot taken. No extensions.
-                            </p>
+                            <span class="sch-tag">Event 03</span>
+                            <h3 class="sch-title">Astro Doxx</h3>
+                            <p class="sch-desc">Doxxing SOC &mdash; 6:00 PM &ndash; 8:00 PM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
                 </div>
 
+                <!-- Event 04 -->
+                <div class="sch-row">
+                    <div class="sch-left">
+                        <div class="sch-hex">
+                            <div class="sch-hex-face"><span class="sch-time">07 PM</span></div>
+                        </div>
+                        <div class="sch-vline"></div>
+                    </div>
+                    <div class="sch-banner">
+                        <div class="sch-content">
+                            <span class="sch-tag">Event 04</span>
+                            <h3 class="sch-title">SOC Destroyer Station</h3>
+                            <p class="sch-desc">Incident Response &mdash; 7:00 PM &ndash; 1:00 AM</p>
+                        </div>
+                        <div class="sch-hatch"></div>
+                    </div>
+                </div>
+
+                <!-- Event 05 -->
+                <div class="sch-row">
+                    <div class="sch-left">
+                        <div class="sch-hex">
+                            <div class="sch-hex-face"><span class="sch-time">08 PM</span></div>
+                        </div>
+                        <div class="sch-vline"></div>
+                    </div>
+                    <div class="sch-banner">
+                        <div class="sch-content">
+                            <span class="sch-tag">Event 05</span>
+                            <h3 class="sch-title">Save Planet Blue</h3>
+                            <p class="sch-desc">Prompt Injection &mdash; 8:00 PM &ndash; 2:00 AM</p>
+                        </div>
+                        <div class="sch-hatch"></div>
+                    </div>
+                </div>
+
+                <!-- Event 06 -->
+                <div class="sch-row">
+                    <div class="sch-left">
+                        <div class="sch-hex">
+                            <div class="sch-hex-face"><span class="sch-time">09 PM</span></div>
+                        </div>
+                        <div class="sch-vline"></div>
+                    </div>
+                    <div class="sch-banner">
+                        <div class="sch-content">
+                            <span class="sch-tag">Event 06</span>
+                            <h3 class="sch-title">Mission: NAS Hijack</h3>
+                            <p class="sch-desc">Machine Exploitation &mdash; 9:00 PM &ndash; 11:00 PM</p>
+                        </div>
+                        <div class="sch-hatch"></div>
+                    </div>
+                </div>
+
+                <!-- Event 07 -->
+                <div class="sch-row">
+                    <div class="sch-left">
+                        <div class="sch-hex">
+                            <div class="sch-hex-face"><span class="sch-time">10 PM</span></div>
+                        </div>
+                        <div class="sch-vline"></div>
+                    </div>
+                    <div class="sch-banner">
+                        <div class="sch-content">
+                            <span class="sch-tag">Event 07</span>
+                            <h3 class="sch-title">Astrofinity</h3>
+                            <p class="sch-desc">Presentation &mdash; 10:00 PM &ndash; 1:00 AM</p>
+                        </div>
+                        <div class="sch-hatch"></div>
+                    </div>
+                </div>
+
+                <!-- Event 13 -->
                 <div class="sch-row sch-row--last">
                     <div class="sch-left">
                         <div class="sch-hex">
-                            <div class="sch-hex-face"><span class="sch-time">19:30</span></div>
+                            <div class="sch-hex-face"><span class="sch-time">02 AM</span></div>
                         </div>
                     </div>
                     <div class="sch-banner">
                         <div class="sch-content">
-
-                            <h3 class="sch-title">Awards Ceremony</h3>
-                            <p class="sch-desc">Results announced. Prize pool distributed. Top teams recognized
-                                on-stage.</p>
+                            <span class="sch-tag">Event 13</span>
+                            <h3 class="sch-title">CTF</h3>
+                            <p class="sch-desc">Capture The Flag &mdash; 2:00 AM &ndash; 6:00 AM</p>
                         </div>
                         <div class="sch-hatch"></div>
                     </div>
@@ -4815,7 +4919,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // ── Three.js shader (desktop only — skip on mobile for perf) ────────────
+  // ── Three.js shader (desktop only - skip on mobile for perf) ────────────
   if (typeof THREE !== 'undefined' && shaderCanvas && window.innerWidth > 900) {
     const scene    = new THREE.Scene();
     const camera   = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
@@ -4990,7 +5094,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // ── Scroll Stack (desktop only — skip pinning on mobile) ────────────
+    // ── Scroll Stack (desktop only - skip pinning on mobile) ────────────
     const isMobile   = () => window.innerWidth <= 900;
     const stackCards = Array.from(document.querySelectorAll('.scroll-stack-card'));
     const wrappers   = Array.from(document.querySelectorAll('.scroll-stack-card-wrapper'));
